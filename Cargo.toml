@@ -1,0 +1,13 @@
+[package]
+name = "pytorch-rs-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tch = "0.15.0"
+anyhow = "1.0.82"
+
+[build]
+rustflags = ["-C", "link-args=-Wl,-rpath,/Users/danielmedina/Documents/Duke/classes/spring-2024/aipi540/pytorch-rs-test/libtorch"]
